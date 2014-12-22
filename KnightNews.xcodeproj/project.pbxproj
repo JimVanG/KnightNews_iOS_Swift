@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FC4B5871A48BBDB00C7506A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC4B5861A48BBDB00C7506A /* CoreLocation.framework */; };
 		7FDE60401A4891E900045AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE603F1A4891E900045AE6 /* AppDelegate.swift */; };
 		7FDE60421A4891E900045AE6 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE60411A4891E900045AE6 /* NewsViewController.swift */; };
 		7FDE60441A4891E900045AE6 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE60431A4891E900045AE6 /* EventsViewController.swift */; };
@@ -25,7 +26,6 @@
 		7FDE60721A48A5CF00045AE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDE60711A48A5CF00045AE6 /* QuartzCore.framework */; };
 		7FDE60741A48A5D600045AE6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDE60731A48A5D600045AE6 /* MobileCoreServices.framework */; };
 		7FDE60761A48A5DE00045AE6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDE60751A48A5DE00045AE6 /* libz.dylib */; };
-		7FDE60781A48A5E600045AE6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDE60771A48A5E600045AE6 /* CoreLocation.framework */; };
 		7FDE607A1A48A5F000045AE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDE60791A48A5F000045AE6 /* CoreGraphics.framework */; };
 		7FDE607C1A48A5FC00045AE6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDE607B1A48A5FC00045AE6 /* CFNetwork.framework */; };
 		7FDE607E1A48A60400045AE6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDE607D1A48A60400045AE6 /* AudioToolbox.framework */; };
@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FC4B5861A48BBDB00C7506A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7FDE603A1A4891E900045AE6 /* KnightNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnightNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDE603E1A4891E900045AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FDE603F1A4891E900045AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		7FDE60711A48A5CF00045AE6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7FDE60731A48A5D600045AE6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7FDE60751A48A5DE00045AE6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		7FDE60771A48A5E600045AE6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7FDE60791A48A5F000045AE6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7FDE607B1A48A5FC00045AE6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7FDE607D1A48A60400045AE6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -79,12 +79,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC4B5871A48BBDB00C7506A /* CoreLocation.framework in Frameworks */,
 				7FDE60821A48A63900045AE6 /* MapKit.framework in Frameworks */,
 				7FDE60801A48A61000045AE6 /* UIKit.framework in Frameworks */,
 				7FDE607E1A48A60400045AE6 /* AudioToolbox.framework in Frameworks */,
 				7FDE607C1A48A5FC00045AE6 /* CFNetwork.framework in Frameworks */,
 				7FDE607A1A48A5F000045AE6 /* CoreGraphics.framework in Frameworks */,
-				7FDE60781A48A5E600045AE6 /* CoreLocation.framework in Frameworks */,
 				7FDE60761A48A5DE00045AE6 /* libz.dylib in Frameworks */,
 				7FDE60741A48A5D600045AE6 /* MobileCoreServices.framework in Frameworks */,
 				7FDE60721A48A5CF00045AE6 /* QuartzCore.framework in Frameworks */,
@@ -110,12 +110,12 @@
 		7FDE60311A4891E900045AE6 = {
 			isa = PBXGroup;
 			children = (
+				7FC4B5861A48BBDB00C7506A /* CoreLocation.framework */,
 				7FDE60811A48A63900045AE6 /* MapKit.framework */,
 				7FDE607F1A48A61000045AE6 /* UIKit.framework */,
 				7FDE607D1A48A60400045AE6 /* AudioToolbox.framework */,
 				7FDE607B1A48A5FC00045AE6 /* CFNetwork.framework */,
 				7FDE60791A48A5F000045AE6 /* CoreGraphics.framework */,
-				7FDE60771A48A5E600045AE6 /* CoreLocation.framework */,
 				7FDE60751A48A5DE00045AE6 /* libz.dylib */,
 				7FDE60731A48A5D600045AE6 /* MobileCoreServices.framework */,
 				7FDE60711A48A5CF00045AE6 /* QuartzCore.framework */,
@@ -477,6 +477,7 @@
 				7FDE605D1A4891E900045AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FDE605E1A4891E900045AE6 /* Build configuration list for PBXNativeTarget "KnightNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +486,7 @@
 				7FDE60601A4891E900045AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
