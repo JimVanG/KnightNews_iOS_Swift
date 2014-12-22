@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FC4B5871A48BBDB00C7506A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC4B5861A48BBDB00C7506A /* CoreLocation.framework */; };
+		7FC4B5891A48CBEA00C7506A /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4B5881A48CBEA00C7506A /* EventItem.swift */; };
 		7FDE60401A4891E900045AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE603F1A4891E900045AE6 /* AppDelegate.swift */; };
 		7FDE60421A4891E900045AE6 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE60411A4891E900045AE6 /* NewsViewController.swift */; };
 		7FDE60441A4891E900045AE6 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE60431A4891E900045AE6 /* EventsViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		7FC4B5861A48BBDB00C7506A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7FC4B5881A48CBEA00C7506A /* EventItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
 		7FDE603A1A4891E900045AE6 /* KnightNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnightNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDE603E1A4891E900045AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FDE603F1A4891E900045AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				7FDE60481A4891E900045AE6 /* Images.xcassets */,
 				7FDE604A1A4891E900045AE6 /* LaunchScreen.xib */,
 				7FDE603D1A4891E900045AE6 /* Supporting Files */,
+				7FC4B5881A48CBEA00C7506A /* EventItem.swift */,
 			);
 			path = KnightNews;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				7FDE60421A4891E900045AE6 /* NewsViewController.swift in Sources */,
 				7FDE60641A489A1E00045AE6 /* MapViewController.swift in Sources */,
 				7FDE60621A489A0700045AE6 /* SportsViewController.swift in Sources */,
+				7FC4B5891A48CBEA00C7506A /* EventItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

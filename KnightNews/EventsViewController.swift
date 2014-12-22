@@ -8,7 +8,25 @@
 
 import UIKit
 
-class EventsViewController: UIViewController {
+class EventsViewController: UITableViewController, NSXMLParserDelegate {
+
+    let EVENT_NAME = "event_name"
+    let EVENT_DATE = "event_date"
+    let EVENT_DESC = "event_desc"
+    
+    let xmlParser: NSXMLParser
+    var tempName: String = ""
+    var tempDate: String = ""
+    var tempDesc: String = ""
+    var elementString: String = ""
+    var items = [EventItem]()
+    
+    required init(coder aDecoder: NSCoder) {
+        xmlParser = NSXMLParser()
+        super.init(coder: aDecoder)
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

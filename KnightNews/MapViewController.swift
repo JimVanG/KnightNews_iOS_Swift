@@ -42,7 +42,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         self.mapView.setCamera(cam, animated: true)
         
-        
     }
     
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
