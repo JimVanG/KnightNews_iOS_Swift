@@ -34,6 +34,7 @@ class EventsViewController: UITableViewController, NSXMLParserDelegate {
         self.xmlParser.shouldResolveExternalEntities = false
         
         self.xmlParser.parse()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,9 +101,13 @@ class EventsViewController: UITableViewController, NSXMLParserDelegate {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("EventsTableViewCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("EventsTableViewCell", forIndexPath: indexPath) as EventsCell
         
+        let eventItem = self.items[indexPath.row]
         
+        cell.nameLabel.text = eventItem.eventTitle
+        cell.descLabel.text = eventItem.eventDesc
+        cell.dateLabel.text = eventItem.eventDate
         
         return cell
     }
