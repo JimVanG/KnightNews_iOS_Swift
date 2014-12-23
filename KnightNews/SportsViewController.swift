@@ -19,6 +19,8 @@ class SportsViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.blackColor()
+        
         //first webview
         self.webViewFootball.loadRequest(NSURLRequest(URL:
             NSURL(string: "http://espn.go.com/college-football/team/_/id/2116/ucf-knights")!))
