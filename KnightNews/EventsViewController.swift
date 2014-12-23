@@ -72,16 +72,18 @@ class EventsViewController: UITableViewController, NSXMLParserDelegate {
     
     func parser(parser: NSXMLParser!, didEndElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!) {
         
-        if self.elementString == EVENT_NAME {
+        if elementName == EVENT_NAME {
             self.eventItem.eventTitle = self.tempName
         }
-        else if self.elementString == EVENT_DATE {
+        else if elementName == EVENT_DATE {
             self.eventItem.eventDate = self.tempDate
             
-        }else if self.elementString == EVENT_DESC {
+        }else if elementName == EVENT_DESC {
             self.eventItem.eventDesc = self.tempDesc
             
             self.items.append( self.eventItem)
+            
+            
         }
     }
 
