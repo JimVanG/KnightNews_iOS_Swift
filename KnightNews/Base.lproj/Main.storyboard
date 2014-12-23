@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="1562" y="-1288"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Events-->
         <scene sceneID="8eV-ff-zse">
             <objects>
-                <tableViewController id="vLP-GH-GGi" sceneMemberID="viewController">
+                <tableViewController id="vLP-GH-GGi" customClass="EventsViewController" customModule="KnightNews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0zf-k7-mpw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +66,10 @@
                             <outlet property="delegate" destination="vLP-GH-GGi" id="tJM-F7-zyG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hQw-Nm-0lj"/>
+                    <navigationItem key="navigationItem" title="Events" id="hQw-Nm-0lj"/>
+                    <connections>
+                        <outlet property="view" destination="0zf-k7-mpw" id="M7d-Zn-FtR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="boP-zm-99U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
