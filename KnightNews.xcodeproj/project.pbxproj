@@ -151,10 +151,10 @@
 				7FDE60431A4891E900045AE6 /* EventsViewController.swift */,
 				7FDE60611A489A0700045AE6 /* SportsViewController.swift */,
 				7FDE60631A489A1E00045AE6 /* MapViewController.swift */,
+				7FC4B5881A48CBEA00C7506A /* EventItem.swift */,
 				7FDE60481A4891E900045AE6 /* Images.xcassets */,
 				7FDE604A1A4891E900045AE6 /* LaunchScreen.xib */,
 				7FDE603D1A4891E900045AE6 /* Supporting Files */,
-				7FC4B5881A48CBEA00C7506A /* EventItem.swift */,
 			);
 			path = KnightNews;
 			sourceTree = "<group>";

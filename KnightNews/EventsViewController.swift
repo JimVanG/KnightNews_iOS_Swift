@@ -25,8 +25,6 @@ class EventsViewController: UITableViewController, NSXMLParserDelegate {
         xmlParser = NSXMLParser()
         super.init(coder: aDecoder)
     }
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +36,7 @@ class EventsViewController: UITableViewController, NSXMLParserDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 

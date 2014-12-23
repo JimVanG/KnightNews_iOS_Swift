@@ -45,38 +45,32 @@
             </objects>
             <point key="canvasLocation" x="1562" y="-1288"/>
         </scene>
-        <!--Events-->
-        <scene sceneID="wg7-f3-ORb">
+        <!--Table View Controller-->
+        <scene sceneID="8eV-ff-zse">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="EventsViewController" customModule="KnightNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                <tableViewController id="vLP-GH-GGi" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0zf-k7-mpw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7t1-Pv-0gD">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="Bcm-oA-JrD"/>
-                                </constraints>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="7t1-Pv-0gD" secondAttribute="trailing" id="20P-nB-yxs"/>
-                            <constraint firstItem="7t1-Pv-0gD" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="-5" id="Npn-7t-Csi"/>
-                            <constraint firstItem="7t1-Pv-0gD" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Yi3-XU-VLk"/>
-                            <constraint firstItem="7t1-Pv-0gD" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="59" id="nU2-6T-hb3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Events" id="Mba-oM-ig0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3MA-3z-agr">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3MA-3z-agr" id="Iai-W9-aHt">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vLP-GH-GGi" id="mXD-8Z-wco"/>
+                            <outlet property="delegate" destination="vLP-GH-GGi" id="tJM-F7-zyG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="hQw-Nm-0lj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boP-zm-99U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="-560"/>
+            <point key="canvasLocation" x="1548" y="-560"/>
         </scene>
         <!--Sports-->
         <scene sceneID="yER-If-wV5">
@@ -185,7 +179,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-28" y="-108"/>
         </scene>
         <!--Map-->
         <scene sceneID="kEM-1C-C6h">
@@ -263,12 +257,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="gCK-Uq-slP"/>
+                        <segue destination="vLP-GH-GGi" kind="relationship" relationship="rootViewController" id="Aza-hd-NNf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Met-Eq-ctO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-560"/>
+            <point key="canvasLocation" x="750" y="-568"/>
         </scene>
         <!--Sports-->
         <scene sceneID="ulZ-HP-aS6">
