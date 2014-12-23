@@ -30,6 +30,8 @@
 	<string>KnightNews will only use your location when using the app.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>KnightNews will use your location.</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
