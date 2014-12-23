@@ -90,7 +90,7 @@ class EventsViewController: UITableViewController, NSXMLParserDelegate {
     func parserDidEndDocument(parser: NSXMLParser!) {
         self.tableView.reloadData()
         
-        println(self.items)
+//        println(self.items)
     }
     
 
