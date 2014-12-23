@@ -106,8 +106,8 @@ class EventsViewController: UITableViewController, NSXMLParserDelegate {
         let eventItem = self.items[indexPath.row]
         
         cell.nameLabel.text = eventItem.eventTitle
-        cell.descLabel.text = eventItem.eventDesc
-        cell.dateLabel.text = eventItem.eventDate
+        cell.descLabel.text = eventItem.eventDesc.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        cell.dateLabel.text = eventItem.eventDate.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
         return cell
     }

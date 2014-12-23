@@ -13,6 +13,8 @@ class EventItem: NSObject {
     var eventDesc = String()
     var eventDate = String()
     
-    
-
+    func description() -> String {
+        
+        return "\(self.eventTitle)\n\(self.eventDesc)\n\(self.eventDate)"
+    }
 }
