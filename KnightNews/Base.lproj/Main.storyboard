@@ -154,10 +154,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSh-uu-Kqu">
-                                <rect key="frame" x="-16" y="542" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-ve-Zdh">
+                                <rect key="frame" x="16" y="551" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ZWQ-9t-R6q"/>
+                                </constraints>
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="K2Z-fm-3T3"/>
+                                    <barButtonItem systemItem="rewind" id="eCk-qq-mNj"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SYW-hs-6ZD"/>
+                                    <barButtonItem systemItem="stop" id="sf5-7L-oWr"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dPB-hY-GqA"/>
+                                    <barButtonItem systemItem="refresh" id="NvU-IQ-FHA"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CPq-OF-KnM"/>
+                                    <barButtonItem systemItem="fastForward" id="UEj-Wp-klF"/>
                                 </items>
                             </toolbar>
                         </subviews>
