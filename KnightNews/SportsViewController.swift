@@ -69,9 +69,10 @@ class SportsViewController: UIViewController, UIWebViewDelegate {
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         // TODO: Handle link clicks, open up a new webViewVC
         if navigationType == UIWebViewNavigationType.LinkClicked {
-            let webViewController = WebViewController(coder: NSCoder())
-            webViewController.urlRequest = request
-            self.navigationController?.pushViewController(webViewController, animated: true)
+            
+            let webVC = self.storyboard?.instantiateViewControllerWithIdentifier("WebViewController") as WebViewController
+            webVC.urlRequest = request
+            self.navigationController?.pushViewController(webVC, animated: true)
             
             return false
         }

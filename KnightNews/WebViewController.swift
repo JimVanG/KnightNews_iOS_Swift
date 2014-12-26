@@ -11,79 +11,54 @@ import UIKit
 import WebKit
 
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, UIWebViewDelegate {
     
-    let webView: WKWebView!
+    @IBOutlet weak var toolbar: UIToolbar!
+    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    @IBOutlet weak var stopButton: UIBarButtonItem!
+    
+    @IBOutlet weak var refreshButton: UIBarButtonItem!
+    
+    @IBOutlet weak var forwardButton: UIBarButtonItem!
+    
+    
     var urlRequest: NSURLRequest!
     
     required init(coder: NSCoder) {
         
-        super.init()
+        super.init(coder: coder)
         
-        //        self.navigationController?.toolbarHidden = false
-        
-//        self.hidesBottomBarWhenPushed = true
-        self.navigationController?.toolbarHidden = false
+        self.hidesBottomBarWhenPushed = true
         
         
-    }
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        let configuration = WKWebViewConfiguration()
-        configuration.allowsInlineMediaPlayback = false
-        configuration.mediaPlaybackRequiresUserAction = true
-        self.webView = WKWebView(frame: CGRectZero, configuration: configuration)
-
-        super.init(nibName: nil, bundle: nil)
     }
     
     
     override func viewDidLoad() {
-        
-        self.view.addSubview(self.webView)
-        self.webView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        self.view.addConstraints(
-            NSLayoutConstraint.constraintsWithVisualFormat(
-                "H:|[wv]|", options: nil, metrics: nil, views: ["wv":self.webView])
-        )
-        self.view.addConstraints(
-            NSLayoutConstraint.constraintsWithVisualFormat(
-                "V:|[wv]|", options: nil, metrics: nil, views: ["wv":self.webView])
-        )
-        
-        let width = self.view.frame.width
-//        let height = self.navigationController?.toolbar.frame.height
-        let frame = CGRectMake(0, 0, width, 44)
-        
-        
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: self, action: nil)
-        let backButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Rewind, target: self, action: "back")
-        
-        var itemsArray = [backButton, flexSpace]
-        self.toolbarItems = itemsArray
-        
-        
-        
-        
-//        var toolBar = UIToolbar(frame: CGRectMake(0, 0, frame.width,
-//            frame.height))
-//        
-//        toolBar.items = itemsArray
-//        
-//        self.view.addSubview(toolBar)
-        
-        
+
+        self.webView.delegate = self
         self.webView.loadRequest(urlRequest)
         
     }
     
-}
+    func updateButtons() {
+        self.forwardButton.enabled = self.webView.canGoForward
+        self.backButton.enabled = self.webView.canGoBack
+        self.stopButton.enabled = self.webView.loading
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        self.updateButtons()
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        self.updateButtons()
 
-extension NSCoder {
-    class func empty() -> NSCoder {
-        let data = NSMutableData()
-        let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
-        archiver.finishEncoding()
-        return NSKeyedUnarchiver(forReadingWithData: data)
+    }
+    
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+        self.updateButtons()
+
     }
 }
